@@ -1,0 +1,104 @@
+/* حاوية القائمة الرئيسية لضمان توسيط العناصر في المنتصف */
+.shopping-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* شبكة المنتجات (توزيع أفقي وتوسيط تلقائي) */
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* تنسيق بطاقة المنتج الفردية */
+.product-card {
+  list-style: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  width: 230px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* حاوية الصورة لضمان ثبات الأبعاد */
+.product-image-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* تنسيق الصورة بداخل البطاقة */
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* عنوان المنتج */
+.product-title {
+  margin: 12px 0 4px 0;
+  font-size: 18px;
+  color: #222;
+  text-align: center;
+}
+
+/* سعر المنتج */
+.product-price {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* تفاصيل الشحن والبطارية */
+.product-details {
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* تنسيق شريط مقياس الشحن والأيقونات أفقياً */
+.charge-scale {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.charge-scale-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
